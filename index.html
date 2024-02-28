@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="icon" type="image/x-icon" href="img/flexflow.jpg" />
+
+    <title>FlexFlow</title>
+  </head>
+  <body>
+    <head>
+      <nav class="navbar" id="navbar" data-show="false">
+        <div class="items start">
+          <button class="btn nav-item" onclick="setPage('rolunk')">
+            <p>Rólunk</p>
+          </button>
+          <button
+            class="btn nav-item"
+            onclick="window.location.href = '#csapatunk'"
+          >
+            <p>Csapatunk</p>
+          </button>
+          <button
+            class="btn nav-item"
+            onclick="window.location.href = '#tanfolyamok'"
+          >
+            <p>Tanfolyamok</p>
+          </button>
+        </div>
+
+        <div class="center">
+          <button class="toggler" onclick="toggleNavbar()">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <div class="brand">
+            <button onclick="window.location.href = '/'">
+              <img src="img/flexflow.jpg" alt="Brand" title="flexflow" />
+            </button>
+          </div>
+        </div>
+
+        <div class="items end">
+          <button
+            class="btn nav-item"
+            onclick="window.location.href = '#csatlakozz'"
+          >
+            <p>Csatlakozz</p>
+          </button>
+          <button
+            class="btn nav-item"
+            onclick="window.location.href = '#kozosseg'"
+          >
+            <p>Közösség</p>
+          </button>
+          <button
+            class="btn nav-item"
+            onclick="window.location.href = '#kapcsolat'"
+          >
+            <p>Kapcsolat</p>
+          </button>
+        </div>
+      </nav>
+    </head>
+
+    <main>
+      <section class="landing">
+        <div class="title">
+          <h1>FlexFlow Tánc Stúdió</h1>
+          <h2 id="title-effect">Mozgás.</h2>
+        </div>
+      </section>
+
+      <section class="section" id="rolunk">
+        <h1>Rólunk</h1>
+
+        <p>
+          A FlexFlow Tánciskola nem csupán egy tanulóhely, hanem egy közösség,
+          amely szenvedélyesen hisz abban, hogy a tánc mindenki számára elérhető
+          és megvalósítható. Csapatunk magában foglalja az iparág legelismertebb
+          tanárait és koreográfusait, akik készek arra, hogy Önt vagy gyermekét
+          az első lépésektől kezdve vezessék a tánc varázslatos világába.
+        </p>
+      </section>
+
+      <section class="section" id="csapatunk">
+        <h1>Csapatunk</h1>
+
+        <div class="cards">
+          <div class="card">
+            <img src="img/csapatunk/default-pfp.webp" alt="1" />
+            <h3>Homonnay Lőrinc</h3>
+            <p></p>
+          </div>
+          <div class="card">
+            <img src="img/csapatunk/default-pfp.webp" alt="2" />
+            <h3>Varga Boglárka</h3>
+            <p></p>
+          </div>
+          <div class="card">
+            <img src="img/csapatunk/default-pfp.webp" alt="3" />
+            <h3>Hodoneczki Patrik</h3>
+            <p></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="tanfolyamok">
+        <h1>Tanfolyamok</h1>
+
+        <div class="cards">
+          <div class="card">
+            <img src="img/tanfolyamok/kezdo.jpg" alt="Kezdő" />
+            <h3>Kezdő Tanfolyamok</h3>
+            <p>
+              Ha még sosem táncolt, vagy csak szeretné felfedezni a tánc
+              világát, kezdő tanfolyamaink segítségével könnyedén belemerülhet a
+              ritmus és a mozgás örömébe.
+            </p>
+          </div>
+          <div class="card">
+            <img src="img/tanfolyamok/halado.webp" alt="Haladó" />
+            <h3>Haladó Kihívások</h3>
+            <p>
+              Ha már rendelkezik táncos tapasztalattal és szeretne magasabb
+              szintre emelkedni, haladó kurzusaink kiváló lehetőséget kínálnak
+              arra, hogy technikai készségeit és kreativitását fejlessze.
+            </p>
+          </div>
+          <div class="card">
+            <img src="img/tanfolyamok/specialis.jpg" alt="Speciális" />
+            <h3>Speciális Ágak</h3>
+            <p>
+              Kínálatunkban szerepelnek olyan speciális kurzusok is, mint a
+              hip-hop, a balett, a jazz vagy akár a társastánc, hogy mindenki
+              megtalálja a számára legvonzóbb stílust és kifejezési formát.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
