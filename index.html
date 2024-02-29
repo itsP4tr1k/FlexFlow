@@ -11,7 +11,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
 
-    <link rel="icon" type="image/x-icon" href="img/flexflow.jpg" />
+    <link rel="icon" type="image/x-icon" href="img/flexflow-light.png" />
 
     <title>FlexFlow</title>
   </head>
@@ -19,18 +19,15 @@
     <head>
       <nav class="navbar" id="navbar" data-show="false">
         <div class="items start">
-          <button class="btn nav-item" onclick="setPage('rolunk')">
+          <button class="btn nav-item" onclick="setPage('index', 'rolunk')">
             <p>Rólunk</p>
           </button>
-          <button
-            class="btn nav-item"
-            onclick="window.location.href = '#csapatunk'"
-          >
+          <button class="btn nav-item" onclick="setPage('index', 'csapatunk')">
             <p>Csapatunk</p>
           </button>
           <button
             class="btn nav-item"
-            onclick="window.location.href = '#tanfolyamok'"
+            onclick="setPage('index', 'tanfolyamok')"
           >
             <p>Tanfolyamok</p>
           </button>
@@ -42,29 +39,20 @@
           </button>
 
           <div class="brand">
-            <button onclick="window.location.href = '/'">
+            <button onclick="setPage('index')">
               <img src="img/flexflow.jpg" alt="Brand" title="flexflow" />
             </button>
           </div>
         </div>
 
         <div class="items end">
-          <button
-            class="btn nav-item"
-            onclick="window.location.href = '#csatlakozz'"
-          >
+          <button class="btn nav-item" onclick="setPage('index', 'csatlakozz')">
             <p>Csatlakozz</p>
           </button>
-          <button
-            class="btn nav-item"
-            onclick="window.location.href = '#kozosseg'"
-          >
-            <p>Közösség</p>
+          <button class="btn nav-item" onclick="setPage('tancok')">
+            <p>Táncok</p>
           </button>
-          <button
-            class="btn nav-item"
-            onclick="window.location.href = '#kapcsolat'"
-          >
+          <button class="btn nav-item" onclick="setPage('index', 'kapcsolat')">
             <p>Kapcsolat</p>
           </button>
         </div>
@@ -98,17 +86,17 @@
           <div class="card">
             <img src="img/csapatunk/default-pfp.webp" alt="1" />
             <h3>Homonnay Lőrinc</h3>
-            <p></p>
+            <p>- Logó tervezés -</p>
           </div>
           <div class="card">
             <img src="img/csapatunk/default-pfp.webp" alt="2" />
             <h3>Varga Boglárka</h3>
-            <p></p>
+            <p>- Prezentáció készítés -</p>
           </div>
           <div class="card">
             <img src="img/csapatunk/default-pfp.webp" alt="3" />
             <h3>Hodoneczki Patrik</h3>
-            <p></p>
+            <p>- Weboldal programozás -</p>
           </div>
         </div>
       </section>
@@ -140,15 +128,22 @@
             <h3>Speciális Ágak</h3>
             <p>
               Kínálatunkban szerepelnek olyan speciális kurzusok is, mint a
-              hip-hop, a balett, a jazz vagy akár a társastánc, hogy mindenki
-              megtalálja a számára legvonzóbb stílust és kifejezési formát.
+              [TÁNCOK] vagy akár a [TÁNC], hogy mindenki megtalálja a számára
+              legvonzóbb stílust és kifejezési formát.
             </p>
           </div>
         </div>
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <div class="copyright">
+        <h3>FlexFlow Táncstúdió Kecskemét</h3>
+        <small>© 2024 FlexFlow Táncstúdió</small>
+      </div>
+
+      <img src="img/flexflow-light.png" alt="Logó" />
+    </footer>
 
     <script src="index.js"></script>
   </body>
