@@ -25,15 +25,3 @@ function toggleNavbar() {
     document.getElementById("navbar").dataset.show = "true";
   }
 }
-
-function setPage(page, subdir) {
-  if (page === "home" || (page === "index" && subdir === undefined)) {
-    window.location.href = `/`;
-  } else {
-    if (subdir === undefined) {
-      window.location.href = `/${page}.html`;
-    } else {
-      window.location.href = `/${page}.html#${subdir}`;
-    }
-  }
-}
