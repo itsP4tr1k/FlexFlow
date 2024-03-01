@@ -25,3 +25,7 @@ function toggleNavbar() {
     document.getElementById("navbar").dataset.show = "true";
   }
 }
+
+function formSubmit() {
+  alert("Köszönjük a kérelmét, hamarosan visszajelzünk önnek e-mailben.");
+}
