@@ -18,14 +18,32 @@ window.setInterval(() => {
   changeWord();
 }, 3000);
 
-function toggleNavbar() {
-  if (document.getElementById("navbar").dataset.show === "true") {
+function toggleNavbar(state) {
+  if (state === false) {
     document.getElementById("navbar").dataset.show = "false";
   } else {
-    document.getElementById("navbar").dataset.show = "true";
+    if (document.getElementById("navbar").dataset.show === "true") {
+      document.getElementById("navbar").dataset.show = "false";
+    } else {
+      document.getElementById("navbar").dataset.show = "true";
+    }
   }
 }
 
-function formSubmit() {
-  alert("Köszönjük a kérelmét, hamarosan visszajelzünk önnek e-mailben.");
+function csatlakozzFormSubmit() {
+  const msg =
+    "Kéréséről csapatunk értesült. Hamarosan visszajelzünk önnek a megadott e-mail címre.";
+
+  var msgBox = document.getElementById("csatlakozz-msg");
+
+  msgBox.innerText = msg;
+}
+
+function kapcsolatFormSubmit() {
+  const msg =
+    "Üzenetét csapatunk megkapta. Hamarosan visszajelzünk önnek a megadott e-mail címre.";
+
+  var msgBox = document.getElementById("kapcsolat-msg");
+
+  msgBox.innerText = msg;
 }

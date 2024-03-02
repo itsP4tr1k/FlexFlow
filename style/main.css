@@ -97,6 +97,7 @@ small {
   background: #fff;
   height: fit-content;
   position: fixed;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5);
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
 }
@@ -211,7 +212,7 @@ small {
   margin: 0 auto;
   padding: 14px;
   background: rgba(0, 0, 0, 0.1);
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.25);
 }
 
 .section#csapatunk {
@@ -238,6 +239,7 @@ small {
   border-radius: 30px;
   max-height: 300px;
   margin: 0 auto 5px auto;
+  box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.25);
 }
 .section#csapatunk .cards .card h3,
 .section#csapatunk .cards .card p {
@@ -260,7 +262,7 @@ small {
   background: rgba(0, 0, 0, 0.15);
   padding: 15px;
   margin: auto auto;
-  box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.35);
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.35);
 }
 .section#tanfolyamok .cards .card img {
   display: block;
@@ -310,10 +312,16 @@ footer img {
     text-align: center;
   }
 }
+.section#csatlakozz {
+  background-color: rgba(0, 0, 0, 0.062745098);
+  width: 100%;
+  padding: 50px 0;
+}
 .section#csatlakozz .form {
-  width: clamp(275px, 100vw, 600px);
+  width: clamp(275px, 100vw, 500px);
   margin: auto auto;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.25);
   border-radius: 24px;
 }
 .section#csatlakozz .form form {
@@ -336,6 +344,47 @@ footer img {
 }
 .section#csatlakozz .form form input[type=submit]:hover {
   background: rgba(255, 255, 255, 0.5019607843);
+}
+.section#csatlakozz .form form p {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.section#kapcsolat .form {
+  width: clamp(275px, 100vw, 600px);
+  margin: auto auto;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+}
+.section#kapcsolat .form form {
+  padding: 12px;
+  margin: auto 0;
+}
+.section#kapcsolat .form form input,
+.section#kapcsolat .form form textarea {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+  background: #fff;
+  padding: 8px;
+  margin-bottom: 4px;
+}
+.section#kapcsolat .form form input[type=submit],
+.section#kapcsolat .form form textarea[type=submit] {
+  cursor: pointer;
+}
+.section#kapcsolat .form form input[type=submit]:hover,
+.section#kapcsolat .form form textarea[type=submit]:hover {
+  background: rgba(255, 255, 255, 0.5019607843);
+}
+.section#kapcsolat .form form textarea {
+  resize: vertical;
+  margin-bottom: 8px;
+}
+.section#kapcsolat .form form p {
+  margin-top: 8px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

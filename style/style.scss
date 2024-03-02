@@ -108,6 +108,7 @@ small {
   background: #fff;
   height: fit-content;
   position: fixed;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5);
 
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -254,7 +255,7 @@ small {
     margin: 0 auto;
     padding: 14px;
     background: rgba(0, 0, 0, 0.1);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.25);
   }
 }
 
@@ -282,6 +283,7 @@ small {
         border-radius: 30px;
         max-height: 300px;
         margin: 0 auto 5px auto;
+        box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.25);
       }
 
       h3,
@@ -309,7 +311,7 @@ small {
       background: rgba(0, 0, 0, 0.15);
       padding: 15px;
       margin: auto auto;
-      box-shadow: 1px 1px 8px 2px rgba(0, 0, 0, 0.35);
+      box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.35);
 
       img {
         display: block;
@@ -377,10 +379,15 @@ footer {
 }
 
 .section#csatlakozz {
+  background-color: #00000010;
+  width: 100%;
+  padding: 50px 0;
+
   .form {
-    width: clamp(275px, 100vw, 600px);
+    width: clamp(275px, 100vw, 500px);
     margin: auto auto;
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(0, 0, 0, 0.05);
+    box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.25);
     border-radius: 24px;
 
     form {
@@ -406,6 +413,54 @@ footer {
             background: #ffffff80;
           }
         }
+      }
+
+      p {
+        margin-top: 8px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.section#kapcsolat {
+  .form {
+    width: clamp(275px, 100vw, 600px);
+    margin: auto auto;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+
+    form {
+      padding: 12px;
+      margin: auto 0;
+
+      input,
+      textarea {
+        width: 100%;
+        border-radius: 12px;
+        display: block;
+        background: #fff;
+        padding: 8px;
+        margin-bottom: 4px;
+
+        &[type="submit"] {
+          cursor: pointer;
+
+          &:hover {
+            background: #ffffff80;
+          }
+        }
+      }
+
+      textarea {
+        resize: vertical;
+        margin-bottom: 8px;
+      }
+
+      p {
+        margin-top: 8px;
+        text-align: center;
       }
     }
   }
