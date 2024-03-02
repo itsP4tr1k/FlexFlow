@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/reset.css" />
+    <link rel="stylesheet" href="style/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="icon" type="image/x-icon" href="img/flexflow-light.png" />
+
+    <title>FlexFlow | Táncok</title>
+  </head>
+  <body>
+    <head>
+      <nav class="navbar" id="navbar" data-show="false">
+        <div class="items start">
+          <a
+            onclick="toggleNavbar(false)"
+            href="index.html#rolunk"
+            class="btn nav-item"
+          >
+            <p>Rólunk</p>
+          </a>
+          <a
+            onclick="toggleNavbar(false)"
+            href="index.html#csapatunk"
+            class="btn nav-item"
+          >
+            <p>Csapatunk</p>
+          </a>
+          <a
+            onclick="toggleNavbar(false)"
+            href="index.html#tanfolyamok"
+            class="btn nav-item"
+          >
+            <p>Tanfolyamok</p>
+          </a>
+        </div>
+
+        <div class="center">
+          <button class="toggler" onclick="toggleNavbar()">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <div class="brand">
+            <a onclick="toggleNavbar(false)" href="index.html">
+              <img src="img/flexflow.jpg" alt="Brand" title="flexflow" />
+            </a>
+          </div>
+        </div>
+
+        <div class="items end">
+          <a
+            onclick="toggleNavbar(false)"
+            href="index.html#csatlakozz"
+            class="btn nav-item"
+          >
+            <p>Csatlakozz</p>
+          </a>
+          <a onclick="toggleNavbar(false)" class="btn nav-item">
+            <p>Táncok</p>
+          </a>
+          <a
+            onclick="toggleNavbar(false)"
+            href="index.html#kapcsolat"
+            class="btn nav-item"
+          >
+            <p>Kapcsolat</p>
+          </a>
+        </div>
+      </nav>
+    </head>
+
+    <main>
+      <section class="section" id="tancok">
+        <div class="tanc">
+          <div class="image">
+            <img src="img/tancok/1.jpg" alt="Tánc" />
+          </div>
+          <div class="text">
+            <h1>Tánc Típus 1</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
+              lorem consectetur, tempus mauris vel, semper dui. In pretium,
+              nulla et rutrum venenatis, tortor enim venenatis erat, sed
+              eleifend quam magna et turpis. Sed lacinia, nisi nec dignissim
+              varius, justo diam hendrerit velit, sed ullamcorper mi sapien a
+              dui.
+            </p>
+          </div>
+        </div>
+
+        <div class="tanc">
+          <div class="text">
+            <h1>Tánc Típus 2</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
+              lorem consectetur, tempus mauris vel, semper dui. In pretium,
+              nulla et rutrum venenatis, tortor enim venenatis erat, sed
+              eleifend quam magna et turpis. Sed lacinia, nisi nec dignissim
+              varius, justo diam hendrerit velit, sed ullamcorper mi sapien a
+              dui.
+            </p>
+          </div>
+          <div class="image">
+            <img src="img/tancok/2.jpg" alt="Tánc" />
+          </div>
+        </div>
+
+        <div class="tanc">
+          <div class="image">
+            <img src="img/tancok/3.jpg" alt="Tánc" />
+          </div>
+          <div class="text">
+            <h1>Tánc Típus 3</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
+              lorem consectetur, tempus mauris vel, semper dui. In pretium,
+              nulla et rutrum venenatis, tortor enim venenatis erat, sed
+              eleifend quam magna et turpis. Sed lacinia, nisi nec dignissim
+              varius, justo diam hendrerit velit, sed ullamcorper mi sapien a
+              dui.
+            </p>
+          </div>
+        </div>
+
+        <div class="tanc">
+          <div class="text">
+            <h1>Tánc Típus 4</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
+              lorem consectetur, tempus mauris vel, semper dui. In pretium,
+              nulla et rutrum venenatis, tortor enim venenatis erat, sed
+              eleifend quam magna et turpis. Sed lacinia, nisi nec dignissim
+              varius, justo diam hendrerit velit, sed ullamcorper mi sapien a
+              dui.
+            </p>
+          </div>
+          <div class="image">
+            <img src="img/tancok/4.jpg" alt="Tánc" />
+          </div>
+        </div>
+
+        <div class="tanc">
+          <div class="image">
+            <img src="img/tancok/5.jpg" alt="Tánc" />
+          </div>
+          <div class="text">
+            <h1>Tánc Típus 5</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et
+              lorem consectetur, tempus mauris vel, semper dui. In pretium,
+              nulla et rutrum venenatis, tortor enim venenatis erat, sed
+              eleifend quam magna et turpis. Sed lacinia, nisi nec dignissim
+              varius, justo diam hendrerit velit, sed ullamcorper mi sapien a
+              dui.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="copyright">
+        <h3>FlexFlow Táncstúdió Kecskemét</h3>
+        <small>© 2024 FlexFlow Táncstúdió</small>
+      </div>
+
+      <img src="img/flexflow-light.png" alt="Logó" />
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
