@@ -78,10 +78,6 @@ small {
     width: fit-content;
   }
 
-  &:hover {
-    background: #c5c5c575;
-  }
-
   &::after {
     display: none;
     content: "";
@@ -96,6 +92,8 @@ small {
 
   &:hover,
   &.active {
+    background: #c5c5c575;
+
     &::after {
       display: block;
     }
